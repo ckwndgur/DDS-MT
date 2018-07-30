@@ -1,0 +1,23 @@
+[
+	// 인터페이스의 유일한 ID
+	uuid(00000000-0000-0000-0000-123456789ABC),
+	version(1.0)
+]
+
+interface InterfaceName
+{
+
+	void onRDMfromSPY([in, string] const unsigned char *dr_guid, [in, string] const unsigned char *st_guid, [in, string] const unsigned char *sub_id, [in, string] const unsigned char *ub_id, [in] long domain_id, [in, string] const unsigned char *dr_qos, [in, string] const unsigned char *st_qos, [in] long total_count, [in] long total_count_change, [in, string] const unsigned char *t); // interface #1
+
+	void onSRfromSPY([in, string] const unsigned char *dr_guid, [in, string] const unsigned char *st_guid, [in, string] const unsigned char *sub_id, [in, string] const unsigned char *ub_id, [in] long domain_id, [in, string] const unsigned char *dr_qos, [in, string] const unsigned char *st_qos, [in] long total_count, [in] long total_count_change, [in] int last_reason, [in, string] const unsigned char *t); // interface #2
+
+	void onLCfromSPY([in, string] const unsigned char *dr_guid, [in, string] const unsigned char *st_guid, [in, string] const unsigned char *sub_id, [in, string] const unsigned char *ub_id, [in] long domain_id, [in, string] const unsigned char *dr_qos, [in, string] const unsigned char *st_qos, [in] long alive_count, [in] long not_alive_count, [in] long alive_count_change, [in] long not_alive_count_change, [in, string] const unsigned char *t); // interface #3
+
+	void onSMfromSPY([in, string] const unsigned char *dr_guid, [in, string] const unsigned char *st_guid, [in, string] const unsigned char *sub_id, [in, string] const unsigned char *ub_id, [in] long domain_id, [in, string] const unsigned char *dr_qos, [in, string] const unsigned char *st_qos, [in] long total_count, [in] long current_count, [in, string] const unsigned char *t); // interface #4
+
+	void onRIQOSfromSPY([in, string] const unsigned char *dr_guid, [in, string] const unsigned char *sub_id, [in] long domain_id, [in, string] const unsigned char *dr_qos, [in] long total_count, [in] long last_policy_id, [in, string] const unsigned char *st_policies, [in, string] const unsigned char *t); // interface #5
+
+	void onSLfromSPY([in, string] const unsigned char *dr_guid, [in, string] const unsigned char *sub_id, [in] long domain_id, [in, string] const unsigned char *dr_qos, [in] long total_count, [in] long total_count_change, [in, string] const unsigned char *t); // interface #6
+
+	void onDAfromSPY([in, string] const unsigned char *dr_guid, [in, string] const unsigned char *dw_guid, [in, string] const unsigned char *sub_id, [in, string] const unsigned char *pub_id, [in] long domain_id, [in, string] const unsigned char *dr_qos, [in, string] const unsigned char *dw_qos, [in, string] const unsigned char *t1_sec, [in] unsigned long t1_nanosec, [in, string] const unsigned char *t2_sec, [in] unsigned long t2_nanosec, [in] unsigned long sample_state, [in] unsigned long view_state, [in] unsigned long instance_state, [in] long disposed_generation_count, [in] long no_writers_generation_count, long sample_rank, [in] long generation_rank, [in] long absolute_generation_rank, [in] boolean valid_data, [in, string] const unsigned char *topic_info, [in, string] const unsigned char *data); // interface #7 
+}
