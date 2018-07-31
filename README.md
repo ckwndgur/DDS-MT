@@ -1,3 +1,5 @@
+@Copyright is in NSL.
+
 # DDS-MT
 The Smart DDS real-time monitoring tool (SD-MT) was designed for real-time monitoring of a large amount of data generated from the control network in the DDS. For this purpose, SD-MT is designed to generate a listener code in DCPS Interface using Interface Definition Language (IDL) defined by OMG group. Here, Smart DDS complies with DDS specification DCPS 1.2v, RTPS 2.1v. This design makes it easy to collect the messages.
 
