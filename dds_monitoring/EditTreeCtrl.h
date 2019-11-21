@@ -238,7 +238,7 @@ class CEditTreeCtrl : public CTreeCtrl
 		DECLARE_MESSAGE_MAP()
 };
 
-
+//김수정바보
 //---------------------------------------------------------------------------
 // helper class CDragData
 
